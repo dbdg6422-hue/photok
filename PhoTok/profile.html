@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button onclick="goHome()">←</button>
+  <div id="profileName">Profile</div>
+  <button id="editBtn" onclick="editProfile()">Edit</button>
+</header>
+
+<section class="profileHead">
+  <div id="profilePic" class="profilePic">👤</div>
+  <input type="file" id="profileInput" hidden>
+</section>
+
+<main id="profileFeed"></main>
+
+<script src="script.js"></script>
+</body>
+</html>

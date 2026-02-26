@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhoTok</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">PhoTok</div>
+  <div class="nav">
+    <button onclick="showUpload()">Upload</button>
+    <button onclick="renderFeed()">Feed</button>
+    <button onclick="goMyProfile()">My Profile</button>
+  </div>
+</header>
+
+<section id="loginBox" class="centerBox">
+  <input id="username" placeholder="Enter username">
+  <button onclick="login()">Login</button>
+</section>
+
+<section id="uploadBox" class="upload hidden">
+  <input type="file" id="photoInput">
+  <input type="text" id="titleInput" placeholder="Title">
+  <textarea id="descInput" placeholder="Description"></textarea>
+  <button onclick="uploadPhoto()">Upload Photo</button>
+</section>
+
+<main id="feed"></main>
+
+<div id="viewer" class="viewer hidden" onclick="closeViewer()">
+  <img id="viewerImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
